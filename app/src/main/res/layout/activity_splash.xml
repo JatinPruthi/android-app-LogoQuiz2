@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.jatin.logoquiz2.Activities.Splash"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="LOGO QUIZ!"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:lottie_fileName="animation.json"
+        android:layout_centerHorizontal="true"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp" />
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/exit"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="@string/dialog_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_info">
+
+        <Button
+            android:id="@+id/intro_exit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:textColor="#ffffff"
+            android:background="@color/colorAccent"
+            android:onClick="introExitPressed"
+            android:text="Exit" />
+
+        <Button
+            android:id="@+id/intro_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/play"
+            android:text="Play"
+            android:textColor="#ffffff"
+            android:onClick="introPlayPressed"/>
+    </LinearLayout>
+</RelativeLayout>

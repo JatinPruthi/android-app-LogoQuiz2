@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Logo Quiz! 2</string>
+
+    <string name="dialog_text">Welcome! Guess the name of the logo that appears on the screen. For each correct character guessed, you\'ll get 5 points and for each incorrect guess, you\'ll get -2. Good Luck!</string>
+    <string name="info_text">Welcome! Guess the name of the logo that appears on the screen. For each correct character guessed, you\'ll get 5 points and for each incorrect guess, you\'ll get -2. Good Luck!
+                             Developed By: JATIN PRUTHI
+    </string>
+
+    <string name="title">LOGO QUIZ!</string>
+</resources>

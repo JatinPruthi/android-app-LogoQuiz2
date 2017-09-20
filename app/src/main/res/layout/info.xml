@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/exit"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/title"/>
+
+    <TextView
+        android:layout_below="@+id/title"
+        android:id="@+id/dialog_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Welcome! Guess the name of the logo that appears on the screen. For each correct character guessed, you\'ll get 5 points and for each incorrect guess, you\'ll get -2. Good Luck!
+
+
+                       *Developed By: JATIN PRUTHI*"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/dialog_info">
+
+
+        <Button
+            android:id="@+id/info_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:background="@color/play"
+            android:text="OK"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</RelativeLayout>
