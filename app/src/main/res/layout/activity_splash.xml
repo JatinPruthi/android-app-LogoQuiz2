@@ -10,8 +10,8 @@
     <TextView
 
         android:textColor="@android:color/white"
-        android:background="@android:color/black"
-        android:textSize="30sp"
+        android:background="@drawable/splash_background"
+        android:textSize="62sp"
         android:gravity="center"
         android:text="LOGO QUIZ!"
         android:layout_width="match_parent"

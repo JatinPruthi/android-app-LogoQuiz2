@@ -7,22 +7,25 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import projects.jatin.logoquiz2.R;
 
 public class PlayOnline extends AppCompatActivity {
 
-    @BindView(R.id.logo_image)
-    ImageView logo_image;
 
-    @BindView(R.id.btn_next)
-    Button next;
+    public Button btnSubmit;
+
+    public GridView gridViewAnswer,gridViewSuggest;
+
+    public ImageView imgViewQuestion;
+
+    public TextView textScore,showScore;
 
     int i=0;
 
@@ -31,11 +34,19 @@ public class PlayOnline extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_online);
-        ButterKnife.bind(this);
 
-        final String pics[]={"facebook","whatsapp","mcdonalds"};
 
-        next.setOnClickListener(new View.OnClickListener() {
+        gridViewAnswer = (GridView)findViewById(R.id.gridViewAnswer);
+        gridViewSuggest = (GridView)findViewById(R.id.gridViewSuggest);
+        imgViewQuestion = (ImageView)findViewById(R.id.imgLogo);
+        textScore= (TextView) findViewById(R.id.textScore);
+        showScore= (TextView) findViewById(R.id.showScore);
+        btnSubmit = (Button)findViewById(R.id.btnSubmit);
+
+
+        final String pics[]={"facebook","whatsapp","mcdonalds","bmw"};
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(i==pics.length)
@@ -55,7 +66,7 @@ public class PlayOnline extends AppCompatActivity {
                     builder.show();
                 }
                 else {
-                    Glide.with(PlayOnline.this).load("http://logo.clearbit.com/" + pics[i] + ".com").into(logo_image);
+                    Glide.with(PlayOnline.this).load("http://logo.clearbit.com/" + pics[i] + ".com").into(imgViewQuestion);
                     i++;
                     
                 }

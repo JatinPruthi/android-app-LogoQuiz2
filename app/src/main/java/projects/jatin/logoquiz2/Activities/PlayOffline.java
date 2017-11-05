@@ -24,6 +24,10 @@ import projects.jatin.logoquiz2.Common.Common;
 import projects.jatin.logoquiz2.R;
 
 public class PlayOffline extends AppCompatActivity {
+
+    int hiScoreCount=0;
+    int checkForHiScore=0;
+
     public List<String> suggestSource = new ArrayList<>();
 
     public OfflineGridViewAnswerAdapter answerAdapter;
@@ -156,6 +160,8 @@ public class PlayOffline extends AppCompatActivity {
                     result+=String.valueOf(Common.user_submit_answer[i]);
                 if(result.equals(correct_answer))
                 {
+                    checkForHiScore();
+
                     Toasty.success(getApplicationContext(),"    Good Job! \n"+result+" is the correct answer!",Toast.LENGTH_SHORT).show();
 
                     //Reset
@@ -183,6 +189,16 @@ public class PlayOffline extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void checkForHiScore() {
+        if (hiScoreCount==0)
+        {
+            //Animate here
+            Toasty.success(getApplicationContext(),"Well Done! HiScore Broken!",Toast.LENGTH_SHORT).show();
+            hiScoreCount=1;
+        }
+
     }
 
     private void setupList() {

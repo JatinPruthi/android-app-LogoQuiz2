@@ -13,8 +13,8 @@ import android.widget.GridView;
  */
 public class OfflineGridViewAnswerAdapter extends BaseAdapter {
 
-    private char[] answerCharacter;
-    private Context context;
+    public char[] answerCharacter;
+    public Context context;
 
     public OfflineGridViewAnswerAdapter(char[] answerCharacter, Context context) {
         this.answerCharacter = answerCharacter;

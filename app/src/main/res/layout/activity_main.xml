@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
+    android:background="@drawable/splash_background"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,6 +10,12 @@
     tools:context="projects.jatin.logoquiz2.Activities.MainActivity">
 
 
+    <TextView
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Logo Quiz!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
     <Button
         android:text="play offline"
         android:id="@+id/btn_offline"

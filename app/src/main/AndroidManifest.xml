@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity"></activity>
+        <activity android:name=".Activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity android:name=".Activities.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.PlayOnline" />
+        <activity android:name=".Activities.PlayOnline"
+            android:theme="@style/OfflinePlay"/>
         <activity android:name=".Activities.PlayOffline"
             android:theme="@style/OfflinePlay"></activity>
     </application>
